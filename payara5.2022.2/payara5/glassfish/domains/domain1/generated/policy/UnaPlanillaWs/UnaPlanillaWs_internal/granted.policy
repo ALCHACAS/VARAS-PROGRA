@@ -1,0 +1,17 @@
+/* AUTOMATICALLY GENERATED ON Tue Nov 01 17:51:59 CST 2022*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "EmpleadoService", "validarUsuario,Local,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "TipoPlanillaFacadeREST", "ping,Local,";
+  permission javax.security.jacc.EJBMethodPermission "EmpleadoService", "getEmpleados,Local,java.lang.String,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "EmpleadoService", "guardarEmpleado,Local,cr.ac.una.unaplanillaws.model.EmpleadoDto";
+  permission javax.security.jacc.EJBMethodPermission "EmpleadoService", "getEmpleado,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "EmpleadoService", "eliminarEmpleado,Local,java.lang.Long";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "TipoPlanillaFacadeREST", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "EmpleadoService", "**";
+};
+
