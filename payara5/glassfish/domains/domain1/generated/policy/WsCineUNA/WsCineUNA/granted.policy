@@ -1,0 +1,15 @@
+/* AUTOMATICALLY GENERATED ON Fri Jan 06 00:37:31 CST 2023*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebResourcePermission "/";
+  permission javax.security.jacc.WebUserDataPermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "com.camora.cinews.JAXRSConfiguration", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+};
+

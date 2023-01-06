@@ -1,0 +1,61 @@
+/* AUTOMATICALLY GENERATED ON Tue Nov 22 20:56:01 CST 2022*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "TandaService", "guardarTanda,Local,com.camora.cinews.model.TandaDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "SalaService", "getSalasByAll,Local,";
+  permission javax.security.jacc.EJBMethodPermission "PeliculaService", "getPeliculaNombre,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "PeliculaService", "getPeliculaXNombreANDEstadoANDIdioma,Local,java.lang.String,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "AsientoService", "getAsiento,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "PeliculaService", "getPeliculaId,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "AlimentoService", "getAlimentosByAll,Local,";
+  permission javax.security.jacc.EJBMethodPermission "UsuarioService", "validarUsuarioXCorreoCodeActiv,Local,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "TandaService", "getTandas,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "SalaService", "getPeliculas,Local,";
+  permission javax.security.jacc.EJBMethodPermission "SalaService", "guardarSala,Local,com.camora.cinews.model.SalaDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "SalaService", "getSalaId,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "AlimentoService", "eliminarAlimento,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "DetalleFacturaService", "getDetalleFactura,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "UsuarioService", "validarUsuario,Local,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "TandaService", "getTandaId,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "PeliculaService", "guardarPelicula,Local,com.camora.cinews.model.PeliculaDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "TandaService", "getTandasByPeli,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "PeliculaService", "getPeliculaXEstadoANDIdioma,Local,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "AlimentoService", "guardarAlimento,Local,com.camora.cinews.model.AlimentoDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "UsuarioService", "getUsuariosByAll,Local,";
+  permission javax.security.jacc.EJBMethodPermission "AsientoService", "cambiarEstado,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "DetalleFacturaService", "eliminarDetalleFactura,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "FacturaService", "getFactura,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "UsuarioService", "guardarUsuario,Local,com.camora.cinews.model.UsuarioDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "SalaService", "getSalaNombre,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "DetalleFacturaService", "guardarDetalleFactura,Local,com.camora.cinews.model.DetalleFacturaDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "AlimentoService", "getAlimentoNombre,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "FacturaEntradaService", "getFacturaEntrada,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "AsientoService", "eliminarAsiento,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "AsientoService", "guardarAsiento,Local,com.camora.cinews.model.AsientoDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "FacturaService", "guardarFactura,Local,com.camora.cinews.model.FacturaDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "FacturaEntradaService", "guardarFacturaEntrada,Local,com.camora.cinews.model.FacturaEntradaDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "AlimentoService", "getAlimentoId,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "UsuarioService", "validarUsuarioXCorreo,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "UsuarioService", "activarUsuario,Local,com.camora.cinews.model.UsuarioDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "PeliculaService", "getPeliculasByAll,Local,";
+  permission javax.security.jacc.EJBMethodPermission "SalaService", "eliminarSala,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "TandaService", "eliminarTanda,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "PeliculaService", "eliminarPelicula,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "AsientoService", "getAsientos,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "UsuarioService", "modificarUsuario,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "SalaService", "eliminarSalas,Local,java.lang.Long";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "PeliculaService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "AlimentoService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "SalaService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "DetalleFacturaService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "UsuarioService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "AsientoService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "FacturaService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "FacturaEntradaService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "TandaService", "**";
+};
+

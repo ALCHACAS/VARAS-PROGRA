@@ -1,0 +1,15 @@
+/* AUTOMATICALLY GENERATED ON Tue Sep 27 13:35:36 CST 2022*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebResourcePermission "/";
+  permission javax.security.jacc.WebUserDataPermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "com.camora.alquilercanchasws.JAXRSConfiguration", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+};
+

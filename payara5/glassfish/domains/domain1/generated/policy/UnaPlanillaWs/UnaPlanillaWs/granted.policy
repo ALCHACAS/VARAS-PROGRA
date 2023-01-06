@@ -1,0 +1,15 @@
+/* AUTOMATICALLY GENERATED ON Tue Nov 22 18:29:53 CST 2022*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebUserDataPermission "/";
+  permission javax.security.jacc.WebResourcePermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "cr.ac.una.unaplanillaws.JAXRSConfiguration", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+};
+

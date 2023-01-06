@@ -1,0 +1,23 @@
+/* AUTOMATICALLY GENERATED ON Tue Oct 11 15:55:46 CST 2022*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "EquipoService", "getEquipoUsuario,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "CanchaService", "guardarCancha,Local,com.camora.alquilerdecanchasws.model.CanchaDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "UsuarioService", "validarUsuario,Local,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "EquipoService", "guardarEquipo,Local,com.camora.alquilerdecanchasws.model.EquipoDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "UsuarioService", "guardarUsuario,Local,com.camora.alquilerdecanchasws.model.UsuarioDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "CanchaService", "getCancha,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "ReservaService", "guardarReserva,Local,com.camora.alquilerdecanchasws.model.ReservaDtoWs,com.camora.alquilerdecanchasws.model.EquiposReservaDtoWs";
+  permission javax.security.jacc.EJBMethodPermission "CanchaService", "getCanchaUsuario,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "UsuarioService", "getUsuario,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "EquipoService", "getEquipo,Local,java.lang.Long";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "EquipoService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "CanchaService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "UsuarioService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "ReservaService", "**";
+};
+
